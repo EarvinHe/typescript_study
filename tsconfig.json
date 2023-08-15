@@ -1,0 +1,35 @@
+{
+  /* tsconfig.json文件时ts编译器的配置文件，ts编译器可以根据它的信息来对代码进行编译 */
+  //  include 用来指定哪些ts文件需要编译
+  "include": [
+    "./src/**/*"
+  ],
+  /* 编译器的选项
+    target：用来指定ts被编译的es的版本
+  */
+  "compilerOptions": {
+    "target": "ES6",
+    /* 指定要使用的模块化标准 */
+    "module": "es2020",
+    // 引用的库
+    // "lib": []
+    /* 分开存放ts于js */
+    "outDir": "./jsDist",
+    /* 合并js */
+    // "outFile": "",
+    /* 是否对js文件进行编译，默认为false */
+    "allowJs": false,
+    // 检查js语法规范
+    "checkJs": false,
+    // 是否移除注释
+    "removeComments": false,
+    // 不生产编译后的文件·
+    "noEmit": false,
+    //不允许不明确的thisl
+    "noImplicitThis": true,
+    // 不允许隐式类型
+    "noImplicitAny": true,
+    // 严格检查的开关
+    "strict": true
+  }
+}
